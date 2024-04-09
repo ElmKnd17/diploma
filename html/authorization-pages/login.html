@@ -11,23 +11,26 @@
     <title>Вход</title>
 </head>
 <body class="page">
-    <article class="window">
-        <h1 class="title">Вход</h1>
-        <form class="form" method="post" autocomplete="off">
-            <label class="input-label">
-                <span>Логин</span>
-                <input class="input" type="email" required placeholder="Введите логин">
-            </label>
-            <label class="input-label">
-                <span>Пароль</span>
-                <input class="input" type="password" required placeholder="Введите пароль" minlength="8">
-            </label>
-            <button class="button" type="submit">Войти</button>
-        </form>
-        <div class="redirect">
-            <p>Ещё не зарегистрированы?</p>
-            <a href="./registration.html">Зарегистрироваться</a>
-        </div>
-    </article>
+    <div class="overlay"></div>
+    <div class="overlay-content authorization-window">
+        <article class="window">
+            <h1 class="title">Вход</h1>
+            <form class="form" method="post" autocomplete="off">
+                <label class="input-label">
+                    <span>Логин</span>
+                    <input class="input" type="email" required placeholder="Введите логин">
+                </label>
+                <label class="input-label">
+                    <span>Пароль</span>
+                    <input class="input" type="password" required placeholder="Введите пароль" minlength="8">
+                </label>
+                <button class="button" type="submit">Войти</button>
+            </form>
+            <div class="redirect">
+                <p>Ещё не зарегистрированы?</p>
+                <a href="./registration.html">Зарегистрироваться</a>
+            </div>
+        </article>
+    </div>
 </body>
 </html>
