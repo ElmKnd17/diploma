@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/icon.ico" type="ico">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/variables.css">
+    <link rel="stylesheet" href="../../styles/authorization-pages/login-registration.css">
+    <title>Регистрация</title>
+</head>
+<body class="page">
+    <article class="window">
+        <h1 class="title">Регистрация</h1>
+        <form class="form" method="post" autocomplete="off">
+            <label class="input-label">
+                <span>Имя</span>
+                <input class="input" type="text" required placeholder="Введите имя">
+            </label>
+            <label class="input-label">
+                <span>Логин</span>
+                <input class="input" type="email" required placeholder="Придумайте логин">
+            </label>
+            <label class="input-label">
+                <span>Пароль</span>
+                <input class="input" type="password" required placeholder="Придумайте пароль" minlength="8">
+            </label>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <div class="redirect">
+            <p>Уже есть аккаунт?</p>
+            <a href="./login.html">Войти</a>
+        </div>
+    </article>
+</body>
+</html>

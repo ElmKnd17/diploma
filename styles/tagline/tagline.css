@@ -1,0 +1,31 @@
+.tagline-container {
+    display: flex;
+    flex-direction: column;
+    grid-area: tagline;
+    justify-self: center;
+    align-self: center;
+    perspective: 1000px;
+}
+
+.tagline-container:hover .straight {
+    transform: rotateX(180deg) translateY(-17%);
+}
+
+.tagline-container:hover .upside-down {
+    transform: rotateX(0deg) translateY(-17%);
+}
+
+.tagline {
+    /* font-size: 90px; */
+    /* 20px-80px */
+    /* font-size: clamp(1.25rem, -0.0704rem + 5.6338vw, 5rem); */
+    line-height: 75%;
+    text-transform: uppercase;
+    transition: transform .3s;
+}
+
+.upside-down {
+    color: transparent;
+    transform: rotateX(180deg);
+    -webkit-text-stroke: 1px white;
+}

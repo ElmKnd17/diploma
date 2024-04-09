@@ -1,0 +1,118 @@
+@import url('../buttons/buttons.css');
+
+.page {
+    color: white;
+    font-family: var(--main-font);
+    background-image: url('../../images/login-registration-overlay.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    padding: 64px 20px 20px 20px;
+    backdrop-filter: var(--main-backdrop-filter);
+}
+
+.header__cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.header__cover-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 20px-50px, 0px-50px */
+    /* padding: clamp(1.25rem, 0.5898rem + 2.8169vw, 3.125rem) clamp(0rem, -1.1004rem + 4.6948vw, 3.125rem); */
+}
+
+.header__cover-label {
+    font-size: 40px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.header__cover-title {
+    font-weight: bold;
+    /* 65px-100px */
+    font-size: clamp(4.0625rem, 3.2923rem + 3.2864vw, 6.25rem);
+    text-transform: uppercase;
+}
+
+.header__form-container {
+    /* width: 50%; */
+    /* 355px-700px */
+    width: clamp(20.9375rem, 12.9049rem + 34.2723vw, 43.75rem);
+}
+
+.header__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    /* 30px-50px */
+    font-size: clamp(1.875rem, 1.4349rem + 1.8779vw, 3.125rem);
+}
+
+.header__form__label {
+    text-align: center;
+}
+
+/* .header__form__select-container {
+    width: 100%;
+    position: relative;
+}
+
+.header__form__select-container::before {
+    content: '⯅';
+    position: absolute;
+    top: 15%;
+    right: 15px;
+    z-index: 100;
+    font-size: 25px;
+    color: rgba(0 0 0);
+    transform: rotate(180deg);
+}
+
+.header__form__select {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    appearance: none;
+    border-radius: 5px;
+}
+
+.header__form__select::-ms-expand {
+    display: none;
+}
+
+.header__form__option {
+    font-size: 20px;
+} */
+
+.header__form__input{
+    width: 100%;
+    padding: 10px 20px;
+    color: rgba(0 0 0);
+}
+
+.header__form__button {
+    width: 100%;
+    font-size: inherit;
+}
+
+@media only screen and (width < 376px) {
+    .header__form-container {
+        width: 100%;
+    }
+}

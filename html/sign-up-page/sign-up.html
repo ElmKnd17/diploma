@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/icon.ico" type="ico">
+    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <link rel="stylesheet" href="../../styles/variables.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/header__bar/header__bar.css">
+    <link rel="stylesheet" href="../../styles/footer/footer.css">
+    <link rel="stylesheet" href="../../styles/sign-up-page/sign-up-page.css">
+    <title>Запись</title>
+</head>
+<body class="page">
+    <div class="header__bar">
+        <div class="header__bar-opener">
+            <div class="header__bar-button" aria-hidden="true">
+                <span aria-hidden="true"></span>
+            </div>
+            <a class="header__bar-title link">Меню</a>
+        </div>
+        <nav class="header__navigation">
+            <a href="../main-page/main.html" class="header__navigation-link link">Главная</a>
+            <a href="../services-page/services.html" class="header__navigation-link link">Услуги</a>
+            <a href="../masters-page/masters.html" class="header__navigation-link link">Мастера</a>
+            <a href="#" class="header__navigation-link active_link">Запись</a>
+            <a href="../contacts-page/contacts.html" class="header__navigation-link link">Контакты</a>
+            <a href="#" class="header__navigation-link link">Профиль</a>
+        </nav>
+        <div class="header__login-container">
+            <a href="../authorization-pages/login.html" class="header__login link">Войти</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__cover">
+            <div class="header__cover-title-container">
+                <p class="header__cover-label">Записаться в салон красоты</p>
+                <h1 class="header__cover-title">Евразель</h1>
+            </div>
+            <div class="header__form-container">
+                <form class="header__form" autocomplete="off">
+                    <!-- <label for="services" class="header__form__label">Выберите услугу</label>
+                    <div class="header__form__select-container">
+                        <select id="services" required class="header__form__select">
+                            <option value="" class="header__form__option">-- --</option>
+                            <option value="haircut" class="header__form__option">Стрижка</option>
+                            <option value="coloring" class="header__form__option">Окраска</option>
+                            <option value="manicure" class="header__form__option">Маникюр / педикюр</option>
+                            <option value="styling" class="header__form__option">Укладка</option>
+                            <option value="care" class="header__form__option">Уход для волос</option>
+                            <option value="makeup" class="header__form__option">Макияж</option>
+                        </select>
+                    </div> -->
+                    <label for="tel" class="header__form__label">Оставьте свой номер и мы вам перезвоним!</label>
+                    <input type="tel" id="tel" class="header__form__input" placeholder="+7 (999) 999-99-99" pattern="\d{11}" required>
+                    <button type="submit" class="header__form__button link-type-button link-type-button--black">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <footer class="footer">
+        <address class="footer__addres">
+            <a href="#" class="footer__addres-link link">EvrAzEl@gmail.com</a>
+            <a href="#" class="footer__addres-link link">+ 7 (927) 77-77-777</a>
+            <a href="#" class="footer__addres-link link">Самарская обл., г. Тольятти, ул. XXXXXX, д.X</a>
+        </address>
+        <div class="footer__author">
+            <p>Эльман Магеррамов</p>
+            <p>©2024</p>
+        </div>
+        <ul class="footer__social-list">
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <img src="../../images/vk.svg" alt="Ссылка на страницу Вконтакте" class="footer__social-item-logo">
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <img src="../../images/yt.svg" alt="Ссылка на YouTube-канал" class="footer__social-item-logo">
+                </a>
+            </li>
+            <li class="footer__social-item">
+                <a href="#" class="footer__social-link">
+                    <img src="../../images/pinterest.svg" alt="Ссылка на аккаунт Pinterest" class="footer__social-item-logo">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../../scripts/headerBar.js"></script>
+</body>

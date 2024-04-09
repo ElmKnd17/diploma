@@ -1,0 +1,300 @@
+/* .content {
+    margin: auto;
+    width: 1440px;
+} */
+
+@import url('../tagline/tagline.css');
+
+.page {
+    height: var(--full-viewport-height);
+    color: white;
+    font-family: var(--main-font);
+    position: relative;
+    /* background-image: url('../../images/login-registration-overlay.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+/* Здесь */
+
+/* Здесь */
+
+/* .header__login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+} */
+
+/* И здесь */
+
+.header__article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        'title description'
+        'tagline tagline';
+    height: 100%;
+    backdrop-filter: var(--main-backdrop-filter);
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    grid-area: title;
+    justify-self: center;
+    align-self: flex-end;
+    padding: 20px;
+}
+
+.header__title-label {
+    font-size: 40px;
+    text-transform: lowercase;
+}
+
+.header__title-name {
+    font-weight: bold;
+    /* font-size: 100px; */
+    /* 65px-100px */
+    font-size: clamp(4.0625rem, 3.2923rem + 3.2864vw, 6.25rem);
+    text-transform: uppercase;
+}
+
+.header__description {
+    grid-area: description;
+    justify-self: center;
+    align-self: flex-end;
+    width: 80%;
+    padding: 20px;
+    /* font-size: 18px; */
+    /* 11px-18px */
+    font-size: clamp(0.6875rem, 0.5335rem + 0.6573vw, 1.125rem);
+    text-transform: uppercase;
+}
+
+.header__tagline {
+    font-size: clamp(1.25rem, -0.0704rem + 5.6338vw, 5rem);
+}
+
+/* .main {
+
+} */
+
+.main__services {
+    background-color: rgba(255 255 255 / .5);
+    backdrop-filter: var(--accent-backdrop-filter);
+}
+
+.main__services-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+.main__services-item:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.main__services-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* gap: 150px; */
+    /* 0px-150px */
+    gap: clamp(0rem, -10.7143rem + 22.3214vw, 9.375rem);
+    padding: 30px clamp(0rem, -2.1429rem + 4.4643vw, 1.875rem);
+}
+
+.main__services-block {
+    width: 375px;
+    /* height: 280px; */
+    /* 280px-220px */
+    height: clamp(15rem, 20.3571rem + -5.9524vw, 17.5rem);
+}
+
+.main__services-image {
+    /* background-image: url(../images/login-registration-overlay.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.main__services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px;
+}
+
+.main__services-title {
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.main__services-description {
+    font-size: 20px;
+}
+
+.main__services-price {
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* .main__services-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main__services-link {
+    position: relative;
+    width: 45%;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main__services-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: transform 0.5s;
+    transform: scaleX(0%);
+    transform-origin: 0%;
+    mix-blend-mode: difference;
+}
+
+.main__services-link:focus-visible::before,
+.main__services-link:hover::before {
+    transform: scaleX(100%);
+}
+
+.main__services-link--price::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: transform 0.5s;
+    transform: scaleX(0%);
+    transform-origin: 0%;
+}
+
+.main__services-link--price:focus-visible::after,
+.main__services-link--price:hover::after {
+    transform: scaleX(100%);
+}
+
+.main__services-link--sign-up {
+    border: none;
+    color: white;
+    background-color: black;
+} */
+
+@media only screen and (width < 769px) {
+
+    .header__article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .header__title {
+        align-self: flex-start;
+    }
+    
+    .header__description {
+        align-self: flex-end;
+    }
+
+    .main__services-content {
+        position: absolute;
+        background-color: rgba(255 255 255 / .5);
+        /* backdrop-filter: brightness(50%); */
+    }
+    
+    .main__services-item {
+        padding: 30px clamp(0rem, -1.7891rem + 7.6336vw, 1.875rem);;
+    }
+
+    .link-type-button--transparent {
+        border: none;
+        background-color: white;
+    }
+
+}
+
+@media only screen and (width < 376px) {
+
+    /* .header__bar {
+        overflow-x: scroll;
+    }
+
+    .header__bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .header__navigation {
+        gap: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
+    }
+
+    .header__navigation-link,
+    .header__login {
+        font-size: 10px;
+    } */
+
+    /* .header__bar {
+        position: relative;
+    }
+
+    .header__navigation {
+        flex-direction: column;
+    } */
+
+}
+
+.overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--full-viewport-height);
+    background-image: url('../../images/login-registration-overlay.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

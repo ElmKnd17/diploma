@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  height: var(--full-viewport-height);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible {
+    outline: none;
+}
+
+/* a:visited {
+    color: inherit;
+} */
+
+button,
+input {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* мои стили */
+button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:focus-visible {
+    /* border: none; */
+    outline: none;
+}
+
+select {
+  border: none;
+}
+
+select:focus-visible {
+  outline: none;
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* мои стили */
+svg {
+  display: block;
+}
+
+/* мои стили */
+img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+input {
+    border: none;
+}
+
+input:focus-visible {
+    outline: none;
+}

@@ -1,0 +1,8 @@
+:root {
+    --full-viewport-height: 100lvh;
+    --window-width: 300px;
+    --window-padding: calc(var(--window-width) / 3);
+    --main-font: Raleway, sans-serif;
+    --main-backdrop-filter: blur(5px) brightness(50%);
+    --accent-backdrop-filter: blur(5px);
+}
