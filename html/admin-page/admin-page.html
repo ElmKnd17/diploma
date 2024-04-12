@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../styles/header__bar/header__bar.css" />
     <link rel="stylesheet" href="../../styles/buttons/buttons.css" />
     <link rel="stylesheet" href="../../styles/footer/footer.css" />
-    <link rel="stylesheet" href="../../styles/profile-page/profile.css" />
+    <link rel="stylesheet" href="../../styles/admin-page/admin.css" />
     <title>Профиль</title>
   </head>
   <body class="page">
@@ -50,7 +50,11 @@
               class="header__navigation-link link"
               >Контакты</a
             >
-            <a href="#" class="header__navigation-link active_link">Профиль</a>
+            <a
+              href="../profile-page/profile.html"
+              class="header__navigation-link link"
+              >Профиль</a
+            >
           </nav>
           <div class="header__login-container">
             <a
@@ -62,26 +66,10 @@
         </div>
       </header>
       <main class="main">
-        <section class="profile__wrapper">
-          <p class="profile__title">Профиль</p>
-          <div class="profile__info_main">
-            <img
-              class="profile__image"
-              src="../../images/haircut.webp"
-              alt="Фото профиля"
-              loading="lazy"
-            />
-            <p class="profile__name">Алиса</p>
-          </div>
-          <div class="profile__info_additional">
-            <p class="profile__email profile__info-item">example@gmail.com</p>
-            <p class="profile__login profile__info-item">AliceInWonderland</p>
-            <button
-              class="profile__button link-type-button link-type-button--transparent"
-            >
-              Редактировать профиль
-            </button>
-          </div>
+        <section class="request">
+            <h1 class="request__title">Записи на обслуживание</h1>
+            <ul class="request__list">
+            </ul>
         </section>
       </main>
       <footer class="footer">
@@ -126,58 +114,21 @@
           </li>
         </ul>
       </footer>
-      <div class="popup popup_is-animated popup-type-profile">
-        <div class="popup__editor">
-          <button class="popup_close-button"></button>
-          <form class="popup__form">
-            <div class="popup__input-container">
-              <label class="popup__label" for="name" name="name"
-                >Введите имя</label
-              >
-              <input
-                class="popup__input"
-                type="text"
-                placeholder="Ваше имя"
-                id="name"
-              />
-            </div>
-            <div class="popup__input-container">
-              <label class="popup__label" for="login" name="login"
-                >Введите логин</label
-              >
-              <input
-                class="popup__input"
-                type="text"
-                placeholder="Ваш логин"
-                id="login"
-              />
-            </div>
-            <div class="popup__input-container">
-              <label class="popup__label" for="email" name="email"
-                >Введите почту</label
-              >
-              <input
-                class="popup__input"
-                type="email"
-                placeholder="Ваша почта"
-                id="email"
-              />
-            </div>
-            <!-- <div class="popup__input-container">
-                        <label class="popup__label" for="logo" name="logo">Вставьте ссылку на фото</label>
-                        <input class="popup__input" type="url" placeholder="Ссылка на фото" id="logo">
-                    </div> -->
-            <button
-              type="submit"
-              class="popup__form__button link-type-button link-type-button--transparent"
-            >
-              Сохранить
-            </button>
-          </form>
-        </div>
-      </div>
     </div>
-    <script src="../../scripts/profileModal.js"></script>
+    <template id="request">
+        <li class="request__item">
+            <div class="request__container">
+                <img alt="Фото профиля" class="request__image" loading="lazy">
+                <div class="request__info-container">
+                    <p class="request__info">Имя: <span class="request__info--name"></span></p>
+                    <p class="request__info">Почта: <span class="request__info--email"></span></p>
+                    <p class="request__info">Номер телефона: <span class="request__info--number"></span></p>
+                </div>
+            </div>
+            <button type="button" class="request__button link-type-button link-type-button--black">Принять</button>
+        </li>
+    </template>
+    <script src="../../scripts/requests.js"></script>
     <script src="../../scripts/headerBar.js"></script>
   </body>
 </html>

@@ -1,0 +1,112 @@
+.page {
+    height: var(--full-viewport-height);
+    color: white;
+    font-family: var(--main-font);
+}
+
+.header {
+    position: relative;
+}
+
+.request {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    min-height: 100vh;
+    padding: 84px 20px 20px;
+    color: black;
+    background-color: rgba(255 255 255 / 0.8);
+    backdrop-filter: var(--accent-backdrop-filter);
+}
+
+.request__title {
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.request__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    gap: 20px;
+}
+
+.request__item {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgba(255 255 255 / 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.request__item--not-accepted {
+    background-color: rgba(0 0 255 / 0.3);
+}
+
+.request__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.request__info-container {
+    display: flex;
+    flex-direction: column;
+    /* 15px-25px */
+    font-size: clamp(0.9375rem, 0.7174rem + 0.939vw, 1.5625rem);
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.request__image {
+    /* 100px- */
+    width: clamp(6.25rem, 5.1496rem + 4.6948vw, 9.375rem);
+    height: clamp(6.25rem, 5.1496rem + 4.6948vw, 9.375rem);
+    border: 1px solid black;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.request__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+.request__info--name {
+    font-weight: normal;
+}
+
+.request__info--email {
+    font-weight: normal;
+}
+
+.request__info--number {
+    font-weight: normal;
+}
+
+.request__button {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media only screen and (width < 769px) {
+    .request {
+        padding: 70px 20px 20px;
+    }
+}

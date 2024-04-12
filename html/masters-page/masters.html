@@ -1,283 +1,442 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../images/icon.ico" type="ico">
-    <link rel="stylesheet" href="../../fonts/fonts.css">
-    <link rel="stylesheet" href="../../styles/variables.css">
-    <link rel="stylesheet" href="../../styles/global.css">
-    <link rel="stylesheet" href="../../styles/header__bar/header__bar.css">
-    <link rel="stylesheet" href="../../styles/footer/footer.css">
-    <link rel="stylesheet" href="../../styles/buttons/buttons.css">
-    <link rel="stylesheet" href="../../styles/masters-page/masters-page.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../images/icon.ico" type="ico" />
+    <link rel="stylesheet" href="../../fonts/fonts.css" />
+    <link rel="stylesheet" href="../../styles/variables.css" />
+    <link rel="stylesheet" href="../../styles/global.css" />
+    <link rel="stylesheet" href="../../styles/header__bar/header__bar.css" />
+    <link rel="stylesheet" href="../../styles/footer/footer.css" />
+    <link rel="stylesheet" href="../../styles/buttons/buttons.css" />
+    <link rel="stylesheet" href="../../styles/masters-page/masters-page.css" />
     <title>Мастера</title>
-</head>
-<body class="page">
+  </head>
+  <body class="page">
     <div class="overlay"></div>
     <div class="overlay-content">
-        <header class="header">
+      <header class="header">
         <div class="header__bar">
-            <div class="header__bar-opener">
-                <div class="header__bar-button" aria-hidden="true">
-                    <span aria-hidden="true"></span>
-                </div>
-                <a class="header__bar-title link">Меню</a>
+          <div class="header__bar-opener">
+            <div class="header__bar-button" aria-hidden="true">
+              <span aria-hidden="true"></span>
             </div>
-            <nav class="header__navigation">
-                <a href="../main-page/main.html" class="header__navigation-link link">Главная</a>
-                <a href="../services-page/services.html" class="header__navigation-link link">Услуги</a>
-                <a href="#" class="header__navigation-link active_link">Мастера</a>
-                <a href="../sign-up-page/sign-up.html" class="header__navigation-link link">Запись</a>
-                <a href="../contacts-page/contacts.html" class="header__navigation-link link">Контакты</a>
-                <a href="../profile-page/profile.html" class="header__navigation-link link">Профиль</a>
-            </nav>
-            <div class="header__login-container">
-                <a href="../authorization-pages/login.html" class="header__login link">Войти</a>
-            </div>
+            <a class="header__bar-title link">Меню</a>
+          </div>
+          <nav class="header__navigation">
+            <a
+              href="../main-page/main.html"
+              class="header__navigation-link link"
+              >Главная</a
+            >
+            <a
+              href="../services-page/services.html"
+              class="header__navigation-link link"
+              >Услуги</a
+            >
+            <a href="#" class="header__navigation-link active_link">Мастера</a>
+            <a
+              href="../sign-up-page/sign-up.html"
+              class="header__navigation-link link"
+              >Запись</a
+            >
+            <a
+              href="../contacts-page/contacts.html"
+              class="header__navigation-link link"
+              >Контакты</a
+            >
+            <a
+              href="../profile-page/profile.html"
+              class="header__navigation-link link"
+              >Профиль</a
+            >
+          </nav>
+          <div class="header__login-container">
+            <a
+              href="../authorization-pages/login.html"
+              class="header__login link"
+              >Войти</a
+            >
+          </div>
         </div>
-    </header>
-    <main>
+      </header>
+      <main>
         <section class="main__masters content">
-            <div class="main__title-container title-container">
-                <h2 class="title">мастера</h2>
-            </div>
-            <ul class="main__masters-list">
-                <li class="main__masters-item">
-                    <img src="../../images/master.webp" alt="Фотография мастера" class="main__master-image">
-                    <div class="main__masters-item__name-container">
-                        <p class="main__masters-item__post">Директор</p>
-                        <p class="main__masters-item__name">Анастасия Светова</p>
-                    </div>
-                    <div class="main__masters-item__description-container">
-                        <p class="main__masters-item__description main__masters-item__experience">Опыт работы: с 2002 года</p>
-                        <p class="main__masters-item__description main__masters-item__specialization">
-                            Специализация: управление, менеджмент, реклама
-                        </p>
-                        <p class="main__masters-item__hobby" aria-hidden="true">
-                            Хобби: петь, учить англ яз, фитнес и бассейн,
-                            люблю читать , изучать психологию,
-                            люблю путешествовать
-                        </p>
-                    </div>
-                    <div class="link-type-button-container">
-                        <button class="main__masters-button-details link-type-button link-type-button--transparent">Подробнее</button>
-                        <a href="../sign-up-page/sign-up.html" class="link-type-button link-type-button--black">Записаться</a>
-                    </div>
-                </li>
-                <li class="main__masters-item">
-                    <img src="../../images/care.webp" alt="Фотография мастера" class="main__master-image">
-                    <div class="main__masters-item__name-container">
-                        <p class="main__masters-item__post">Администратор</p>
-                        <p class="main__masters-item__name">Елена Цветкова</p>
-                    </div>
-                    <div class="main__masters-item__description-container">
-                        <p class="main__masters-item__description main__masters-item__experience">Опыт работы: с 2007 года</p>
-                        <p class="main__masters-item__description main__masters-item__specialization">
-                            Специализация: сервис, контроль работы, документооборот
-                        </p>
-                        <p class="main__masters-item__hobby" aria-hidden="true">
-                            Хобби: петь, учить англ яз, фитнес и бассейн,
-                            люблю читать , изучать психологию,
-                            люблю путешествовать
-                        </p>
-                    </div>
-                    <div class="link-type-button-container">
-                        <button class="main__masters-button-details link-type-button link-type-button--transparent">Подробнее</button>
-                        <a href="../sign-up-page/sign-up.html" class="link-type-button link-type-button--black">Записаться</a>
-                    </div>
-                </li>
-                <li class="main__masters-item">
-                    <img src="../../images/coloring.webp" alt="Фотография мастера" class="main__master-image">
-                    <div class="main__masters-item__name-container">
-                        <p class="main__masters-item__post">Администратор</p>
-                        <p class="main__masters-item__name">Мария Иванова</p>
-                    </div>
-                    <div class="main__masters-item__description-container">
-                        <p class="main__masters-item__description main__masters-item__experience">Опыт работы: с 2010 года</p>
-                        <p class="main__masters-item__description main__masters-item__specialization">
-                            Специализация: телефонные разговоры с клиентами,
-                            эффективное взаимодействие с мастерами
-                        </p>
-                        <p class="main__masters-item__hobby" aria-hidden="true">
-                            Хобби: петь, учить англ яз, фитнес и бассейн,
-                            люблю читать , изучать психологию,
-                            люблю путешествовать
-                        </p>
-                    </div>
-                    <div class="link-type-button-container">
-                        <button class="main__masters-button-details link-type-button link-type-button--transparent">Подробнее</button>
-                        <a href="../sign-up-page/sign-up.html" class="link-type-button link-type-button--black">Записаться</a>
-                    </div>
-                </li>
-                <li class="main__masters-item">
-                    <img src="../../images/haircut.webp" alt="Фотография мастера" class="main__master-image">
-                    <div class="main__masters-item__name-container">
-                        <p class="main__masters-item__post">Стилист</p>
-                        <p class="main__masters-item__name">Екатерина Вестникова</p>
-                    </div>
-                    <div class="main__masters-item__description-container">
-                        <p class="main__masters-item__description main__masters-item__experience">Опыт работы: с 2002 года</p>
-                        <p class="main__masters-item__description main__masters-item__specialization">
-                            Специализация: стрижки, детские стрижки, уходы
-                        </p>
-                        <p class="main__masters-item__hobby" aria-hidden="true">
-                            Хобби: петь, учить англ яз, фитнес и бассейн,
-                            люблю читать , изучать психологию,
-                            люблю путешествовать
-                        </p>
-                    </div>
-                    <div class="link-type-button-container">
-                        <button class="main__masters-button-details link-type-button link-type-button--transparent">Подробнее</button>
-                        <a href="../sign-up-page/sign-up.html" class="link-type-button link-type-button--black">Записаться</a>
-                    </div>
-                </li>
-                <li class="main__masters-item">
-                    <img src="../../images/makeup.webp" alt="Фотография мастера" class="main__master-image">
-                    <div class="main__masters-item__name-container">
-                        <p class="main__masters-item__post">Стилист</p>
-                        <p class="main__masters-item__name">Ольга Дмитриева</p>
-                    </div>
-                    <div class="main__masters-item__description-container">
-                        <p class="main__masters-item__description main__masters-item__experience">Опыт работы: с 2002 года</p>
-                        <p class="main__masters-item__description main__masters-item__specialization">
-                            Специализация: стрижки разной сложности, окрашивания
-                        </p>
-                        <p class="main__masters-item__hobby" aria-hidden="true">
-                            Хобби: петь, учить англ яз, фитнес и бассейн,
-                            люблю читать , изучать психологию,
-                            люблю путешествовать
-                        </p>
-                    </div>
-                    <div class="link-type-button-container">
-                        <button class="main__masters-button-details link-type-button link-type-button--transparent">Подробнее</button>
-                        <a href="../sign-up-page/sign-up.html" class="link-type-button link-type-button--black">Записаться</a>
-                    </div>
-                </li>
-                <li class="main__masters-item">
-                    <img src="../../images/why.webp" alt="Фотография мастера" class="main__master-image">
-                    <div class="main__masters-item__name-container">
-                        <p class="main__masters-item__post">Стилист</p>
-                        <p class="main__masters-item__name">Дарья Павлова</p>
-                    </div>
-                    <div class="main__masters-item__description-container">
-                        <p class="main__masters-item__description main__masters-item__experience">Опыт работы: с 2002 года</p>
-                        <p class="main__masters-item__description main__masters-item__specialization">
-                            Специализация: окрашивания и стрижки, уходы
-                        </p>
-                        <p class="main__masters-item__hobby" aria-hidden="true">
-                            Хобби: петь, учить англ яз, фитнес и бассейн,
-                            люблю читать , изучать психологию,
-                            люблю путешествовать
-                        </p>
-                    </div>
-                    <div class="link-type-button-container">
-                        <button class="main__masters-button-details link-type-button link-type-button--transparent">Подробнее</button>
-                        <a href="../sign-up-page/sign-up.html" class="link-type-button link-type-button--black">Записаться</a>
-                    </div>
-                </li>
-            </ul>
+          <div class="main__title-container title-container">
+            <h2 class="title">мастера</h2>
+          </div>
+          <ul class="main__masters-list">
+            <li class="main__masters-item">
+              <img
+                src="../../images/master.webp"
+                alt="Фотография мастера"
+                class="main__master-image"
+              />
+              <div class="main__masters-item__name-container">
+                <p class="main__masters-item__post">Директор</p>
+                <p class="main__masters-item__name">Анастасия Светова</p>
+              </div>
+              <div class="main__masters-item__description-container">
+                <p
+                  class="main__masters-item__description main__masters-item__experience"
+                >
+                  Опыт работы: с 2002 года
+                </p>
+                <p
+                  class="main__masters-item__description main__masters-item__specialization"
+                >
+                  Специализация: управление, менеджмент, реклама
+                </p>
+                <p class="main__masters-item__hobby" aria-hidden="true">
+                  Хобби: петь, учить англ яз, фитнес и бассейн, люблю читать ,
+                  изучать психологию, люблю путешествовать
+                </p>
+              </div>
+              <div class="link-type-button-container">
+                <button
+                  class="main__masters-button-details link-type-button link-type-button--transparent"
+                >
+                  Подробнее
+                </button>
+                <a
+                  href="../sign-up-page/sign-up.html"
+                  class="link-type-button link-type-button--black"
+                  >Записаться</a
+                >
+              </div>
+            </li>
+            <li class="main__masters-item">
+              <img
+                src="../../images/care.webp"
+                alt="Фотография мастера"
+                class="main__master-image"
+              />
+              <div class="main__masters-item__name-container">
+                <p class="main__masters-item__post">Администратор</p>
+                <p class="main__masters-item__name">Елена Цветкова</p>
+              </div>
+              <div class="main__masters-item__description-container">
+                <p
+                  class="main__masters-item__description main__masters-item__experience"
+                >
+                  Опыт работы: с 2007 года
+                </p>
+                <p
+                  class="main__masters-item__description main__masters-item__specialization"
+                >
+                  Специализация: сервис, контроль работы, документооборот
+                </p>
+                <p class="main__masters-item__hobby" aria-hidden="true">
+                  Хобби: петь, учить англ яз, фитнес и бассейн, люблю читать ,
+                  изучать психологию, люблю путешествовать
+                </p>
+              </div>
+              <div class="link-type-button-container">
+                <button
+                  class="main__masters-button-details link-type-button link-type-button--transparent"
+                >
+                  Подробнее
+                </button>
+                <a
+                  href="../sign-up-page/sign-up.html"
+                  class="link-type-button link-type-button--black"
+                  >Записаться</a
+                >
+              </div>
+            </li>
+            <li class="main__masters-item">
+              <img
+                src="../../images/coloring.webp"
+                alt="Фотография мастера"
+                class="main__master-image"
+              />
+              <div class="main__masters-item__name-container">
+                <p class="main__masters-item__post">Администратор</p>
+                <p class="main__masters-item__name">Мария Иванова</p>
+              </div>
+              <div class="main__masters-item__description-container">
+                <p
+                  class="main__masters-item__description main__masters-item__experience"
+                >
+                  Опыт работы: с 2010 года
+                </p>
+                <p
+                  class="main__masters-item__description main__masters-item__specialization"
+                >
+                  Специализация: телефонные разговоры с клиентами, эффективное
+                  взаимодействие с мастерами
+                </p>
+                <p class="main__masters-item__hobby" aria-hidden="true">
+                  Хобби: петь, учить англ яз, фитнес и бассейн, люблю читать ,
+                  изучать психологию, люблю путешествовать
+                </p>
+              </div>
+              <div class="link-type-button-container">
+                <button
+                  class="main__masters-button-details link-type-button link-type-button--transparent"
+                >
+                  Подробнее
+                </button>
+                <a
+                  href="../sign-up-page/sign-up.html"
+                  class="link-type-button link-type-button--black"
+                  >Записаться</a
+                >
+              </div>
+            </li>
+            <li class="main__masters-item">
+              <img
+                src="../../images/haircut.webp"
+                alt="Фотография мастера"
+                class="main__master-image"
+              />
+              <div class="main__masters-item__name-container">
+                <p class="main__masters-item__post">Стилист</p>
+                <p class="main__masters-item__name">Екатерина Вестникова</p>
+              </div>
+              <div class="main__masters-item__description-container">
+                <p
+                  class="main__masters-item__description main__masters-item__experience"
+                >
+                  Опыт работы: с 2002 года
+                </p>
+                <p
+                  class="main__masters-item__description main__masters-item__specialization"
+                >
+                  Специализация: стрижки, детские стрижки, уходы
+                </p>
+                <p class="main__masters-item__hobby" aria-hidden="true">
+                  Хобби: петь, учить англ яз, фитнес и бассейн, люблю читать ,
+                  изучать психологию, люблю путешествовать
+                </p>
+              </div>
+              <div class="link-type-button-container">
+                <button
+                  class="main__masters-button-details link-type-button link-type-button--transparent"
+                >
+                  Подробнее
+                </button>
+                <a
+                  href="../sign-up-page/sign-up.html"
+                  class="link-type-button link-type-button--black"
+                  >Записаться</a
+                >
+              </div>
+            </li>
+            <li class="main__masters-item">
+              <img
+                src="../../images/makeup.webp"
+                alt="Фотография мастера"
+                class="main__master-image"
+              />
+              <div class="main__masters-item__name-container">
+                <p class="main__masters-item__post">Стилист</p>
+                <p class="main__masters-item__name">Ольга Дмитриева</p>
+              </div>
+              <div class="main__masters-item__description-container">
+                <p
+                  class="main__masters-item__description main__masters-item__experience"
+                >
+                  Опыт работы: с 2002 года
+                </p>
+                <p
+                  class="main__masters-item__description main__masters-item__specialization"
+                >
+                  Специализация: стрижки разной сложности, окрашивания
+                </p>
+                <p class="main__masters-item__hobby" aria-hidden="true">
+                  Хобби: петь, учить англ яз, фитнес и бассейн, люблю читать ,
+                  изучать психологию, люблю путешествовать
+                </p>
+              </div>
+              <div class="link-type-button-container">
+                <button
+                  class="main__masters-button-details link-type-button link-type-button--transparent"
+                >
+                  Подробнее
+                </button>
+                <a
+                  href="../sign-up-page/sign-up.html"
+                  class="link-type-button link-type-button--black"
+                  >Записаться</a
+                >
+              </div>
+            </li>
+            <li class="main__masters-item">
+              <img
+                src="../../images/why.webp"
+                alt="Фотография мастера"
+                class="main__master-image"
+              />
+              <div class="main__masters-item__name-container">
+                <p class="main__masters-item__post">Стилист</p>
+                <p class="main__masters-item__name">Дарья Павлова</p>
+              </div>
+              <div class="main__masters-item__description-container">
+                <p
+                  class="main__masters-item__description main__masters-item__experience"
+                >
+                  Опыт работы: с 2002 года
+                </p>
+                <p
+                  class="main__masters-item__description main__masters-item__specialization"
+                >
+                  Специализация: окрашивания и стрижки, уходы
+                </p>
+                <p class="main__masters-item__hobby" aria-hidden="true">
+                  Хобби: петь, учить англ яз, фитнес и бассейн, люблю читать ,
+                  изучать психологию, люблю путешествовать
+                </p>
+              </div>
+              <div class="link-type-button-container">
+                <button
+                  class="main__masters-button-details link-type-button link-type-button--transparent"
+                >
+                  Подробнее
+                </button>
+                <a
+                  href="../sign-up-page/sign-up.html"
+                  class="link-type-button link-type-button--black"
+                  >Записаться</a
+                >
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="main__article content">
-            <div class="main__article-title-container title-container">
-                <h2 class="title">Почему выбирают нас?</h2>
-            </div>
-            <div class="main__article-container">
-                <ul class="main__article-list">
-                    <li class="main__article-item">
-                        10% кешбэк
-                    </li>
-                    <li class="main__article-item">
-                        Работаем на экологической косметике
-                    </li>
-                    <li class="main__article-item">
-                        Услуги в 4 руки
-                    </li>
-                    <li class="main__article-item">
-                        Косметика премиум сегмента
-                    </li>
-                    <li class="main__article-item">
-                        Сезонные напитки
-                    </li>
-                    <li class="main__article-item">
-                        Бесплатная парковка
-                    </li>
-                </ul>
-                <img src="../../images/why.webp" alt="Картинка с двумя молодыми девушками" class="main__article-image">
-            </div>
+          <div class="main__article-title-container title-container">
+            <h2 class="title">Почему выбирают нас?</h2>
+          </div>
+          <div class="main__article-container">
+            <ul class="main__article-list">
+              <li class="main__article-item">10% кешбэк</li>
+              <li class="main__article-item">
+                Работаем на экологической косметике
+              </li>
+              <li class="main__article-item">Услуги в 4 руки</li>
+              <li class="main__article-item">Косметика премиум сегмента</li>
+              <li class="main__article-item">Сезонные напитки</li>
+              <li class="main__article-item">Бесплатная парковка</li>
+            </ul>
+            <img
+              src="../../images/why.webp"
+              alt="Картинка с двумя молодыми девушками"
+              class="main__article-image"
+            />
+          </div>
         </section>
-    </main>
-    <footer class="footer">
+      </main>
+      <footer class="footer">
         <address class="footer__addres">
-            <a href="#" class="footer__addres-link link">EvrAzEl@gmail.com</a>
-            <a href="#" class="footer__addres-link link">+ 7 (927) 77-77-777</a>
-            <a href="#" class="footer__addres-link link">Самарская обл., г. Тольятти, ул. XXXXXX, д.X</a>
+          <a href="#" class="footer__addres-link link">EvrAzEl@gmail.com</a>
+          <a href="#" class="footer__addres-link link">+ 7 (927) 77-77-777</a>
+          <a href="#" class="footer__addres-link link"
+            >Самарская обл., г. Тольятти, ул. XXXXXX, д.X</a
+          >
         </address>
         <div class="footer__author">
-            <p>Эльман Магеррамов</p>
-            <p>©2024</p>
+          <p>Эльман Магеррамов</p>
+          <p>©2024</p>
         </div>
         <ul class="footer__social-list">
-            <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
-                    <img src="../../images/vk.svg" alt="Ссылка на страницу Вконтакте" class="footer__social-item-logo">
-                </a>
-            </li>
-            <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
-                    <img src="../../images/yt.svg" alt="Ссылка на YouTube-канал" class="footer__social-item-logo">
-                </a>
-            </li>
-            <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
-                    <img src="../../images/pinterest.svg" alt="Ссылка на аккаунт Pinterest" class="footer__social-item-logo">
-                </a>
-            </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <img
+                src="../../images/vk.svg"
+                alt="Ссылка на страницу Вконтакте"
+                class="footer__social-item-logo"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <img
+                src="../../images/yt.svg"
+                alt="Ссылка на YouTube-канал"
+                class="footer__social-item-logo"
+              />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              <img
+                src="../../images/pinterest.svg"
+                alt="Ссылка на аккаунт Pinterest"
+                class="footer__social-item-logo"
+              />
+            </a>
+          </li>
         </ul>
-    </footer>
-    <div class="popup popup-type-master popup_is-animated">
+      </footer>
+      <div class="popup popup-type-master popup_is-animated">
         <button class="popup_close-button"></button>
         <div class="popup__master-container">
-            <img src="" alt="Фотография мастера" class="popup__master-image">
-            <div class="popup__master-description">
-                <div class="popup__name-container">
-                    <p class="popup__name"></p>
-                    <p class="popup__post"></p>
-                </div>
-                <div class="popup__description-container">
-                    <p class="popup__description popup__experience"></p>
-                    <p class="popup__description popup__specialization"></p>
-                    <p class="popup__description popup__hobby"></p>
-                </div>
+          <img src="" alt="Фотография мастера" class="popup__master-image" />
+          <div class="popup__master-description">
+            <div class="popup__name-container">
+              <p class="popup__name"></p>
+              <p class="popup__post"></p>
             </div>
+            <div class="popup__description-container">
+              <p class="popup__description popup__experience"></p>
+              <p class="popup__description popup__specialization"></p>
+              <p class="popup__description popup__hobby"></p>
+            </div>
+          </div>
         </div>
         <div class="popup__portfolio">
-            <div class="title-container popup__title-container">
-                <h2 class="title">Портфолио</h2>
-            </div>
-            <ul class="popup__images-list">
-                <li class="popup__images-item one">
-                    <img src="../../images/haircut.webp" alt="" class="popup__portfolio-image">
-                </li>
-                <li class="popup__images-item two">
-                    <img src="../../images/coloring.webp" alt="" class="popup__portfolio-image">
-                </li>
-                <li class="popup__images-item three">
-                    <img src="../../images/styling.webp" alt="" class="popup__portfolio-image">
-                </li>
-                <li class="popup__images-item four">
-                    <img src="../../images/makeup.webp" alt="" class="popup__portfolio-image">
-                </li>
-                <li class="popup__images-item five">
-                    <img src="../../images/manicure.webp" alt="" class="popup__portfolio-image">
-                </li>
-            </ul>
+          <div class="title-container popup__title-container">
+            <h2 class="title">Портфолио</h2>
+          </div>
+          <ul class="popup__images-list">
+            <li class="popup__images-item one">
+              <img
+                src="../../images/haircut.webp"
+                alt=""
+                class="popup__portfolio-image"
+              />
+            </li>
+            <li class="popup__images-item two">
+              <img
+                src="../../images/coloring.webp"
+                alt=""
+                class="popup__portfolio-image"
+              />
+            </li>
+            <li class="popup__images-item three">
+              <img
+                src="../../images/styling.webp"
+                alt=""
+                class="popup__portfolio-image"
+              />
+            </li>
+            <li class="popup__images-item four">
+              <img
+                src="../../images/makeup.webp"
+                alt=""
+                class="popup__portfolio-image"
+              />
+            </li>
+            <li class="popup__images-item five">
+              <img
+                src="../../images/manicure.webp"
+                alt=""
+                class="popup__portfolio-image"
+              />
+            </li>
+          </ul>
         </div>
         <div class="link-type-button-container">
-            <a href="../services-page/services.html" class="popup__link link-type-button link-type-button--transparent">Прайс</a>
+          <a
+            href="../services-page/services.html"
+            class="popup__link link-type-button link-type-button--transparent"
+            >Прайс</a
+          >
         </div>
-    </div>
+      </div>
     </div>
     <script src="../../scripts/mastersModal.js"></script>
     <script src="../../scripts/headerBar.js"></script>
-</body>
+  </body>
+</html>

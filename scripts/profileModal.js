@@ -17,7 +17,7 @@ function openModal(modal) {
     closeButton.addEventListener('click', closeButtonHandler)
     modal.addEventListener('click', closeByOverlayHandler);
     document.addEventListener('keydown', closeByEscapeHandler);
-    form.addEventListener('submit', submitButtonHandler)
+    form.addEventListener('submit', submitButtonHandler);
 }
 
 function closeModal(modal) {
@@ -25,7 +25,7 @@ function closeModal(modal) {
     closeButton.removeEventListener('click', closeButtonHandler);
     modal.removeEventListener('click', closeByOverlayHandler);
     document.removeEventListener('keydown', closeByEscapeHandler);
-    form.removeEventListener('submit', submitButtonHandler)
+    form.removeEventListener('submit', submitButtonHandler);
 }
 
 function closeButtonHandler() {
