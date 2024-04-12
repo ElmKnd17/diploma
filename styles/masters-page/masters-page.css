@@ -1,3 +1,5 @@
+@import url('../popup/popup.css');
+
 .page {
     color: white;
     font-family: var(--main-font);
@@ -162,7 +164,7 @@
     height: 100%;
 }
 
-.popup {
+/* .popup {
     position: fixed;
     top: 0;
     right: 0;
@@ -187,7 +189,7 @@
     opacity: 1;
     transition: visibility 0s, opacity 0.6s;
     pointer-events: all;
-}
+} */
 
 .popup-type-master {
     display: flex;
@@ -353,7 +355,7 @@
     background-color: rgba(255 255 255 / .8);
 }
 
-.popup_close-button {
+/* .popup_close-button {
     position: fixed;
     top: 50px;
     right: 50px;
@@ -390,7 +392,7 @@
 .popup_close-button:hover,
 .popup_close-button:focus-visible {
     transform: scale(150%);
-}
+} */
 
 /* .popup_close-button:hover::before,
 .popup_close-button:focus-visible::before {
